@@ -6,25 +6,36 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Random Quote Machine</title>
-  <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<div class="container">
-  <div class="content">
-    <h1 class="header">Quoterific</h1>
-    <p class="quote">When she reached the ﬁrst hills of the Italic Mountains, she had a last view back on the
-      skyline of her hometown Bookmarks Grove.
-    </p>
-    <p class="author">Source or Author</p>
-    <button class="new-quote">Show a Quote</button>
-    <p class="author share-label">Share the Wisdom</p>
-    <div class="share-links">
-      <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+<section class="section">
+  <div class="container">
+    <div class="app column is-6 has-text-centered">
+      <div class="heading">
+        <h1 class="title is-2">Quoterific</h1>
+      </div>
+      <div class="quote box">
+        <p class="has-text-left">
+          When she reached the ﬁrst hills of the Italic Mountains, she had a
+          last view back on the skyline of her hometown Bookmarks Grove.
+        </p>
+        <p class="has-text-right">
+          <small class="author">Source or Author</small>
+        </p>
+      </div>
+      <div class="show-quote">
+        <a id="quote-button" class="button is-info">Show Another Quote</a>
+      </div>
+      <footer class="footer">
+        <p class="title is-4">Share the Wisdom</p>
+        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+      </footer>
     </div>
   </div>
-</div>
+</section>
 <script src="./js/main.js"></script>
 </body>
 </html>
