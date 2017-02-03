@@ -3,17 +3,25 @@ const quoteBox = document.getElementById('quote-box');
 
 quoteButton.onclick = event => {
   event.preventDefault();
-  axios.get('http://quotesondesign.com/wp-json/posts', {
-    params: {filter: {orderby: "rand", posts_per_page: 1}}
-  })
+  axios.post('https://andruxnet-random-famous-quotes.p.mashape.com', {},
+    {
+      headers: {
+        "X-Mashape-Key": "OivH71yd3tmshl9YKzFH7BTzBVRQp1RaKLajsnafgL2aPsfP9V",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Accept": "application/json"
+      },
+      params: {cat: 'movies'}
+    })
     .then(function (response) {
-      quoteBox.innerHTML = response.data.map(quote => (
-          `<p class="has-text-left">${quote.content}</p>
+      const {author, quote, category} = response.data;
+      quoteBox.innerHTML =
+          `<p class="has-text-left">${quote}</p>
            <p class="has-text-right">
-             <small id="quote-source">${quote.title}</small>
+             <small id="quote-source">${category}</small>
+           </p>
+           <p class="has-text-right">
+             <small id="quote-source">${author}</small>
            </p>`
-        )
-      ).join('');
     })
     .catch(function (error) {
       quoteBox.innerHTML =
