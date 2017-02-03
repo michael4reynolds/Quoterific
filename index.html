@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
   <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
   <link rel="stylesheet" href="./css/style.css">
+  <script
+          src="https://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous"></script>
 </head>
 <body>
 <section class="section">
@@ -17,17 +21,9 @@
       <div class="heading">
         <h1 class="title is-2">Quoterific</h1>
       </div>
-      <div class="quote box">
-        <p class="has-text-left">
-          When she reached the ﬁrst hills of the Italic Mountains, she had a
-          last view back on the skyline of her hometown Bookmarks Grove.
-        </p>
-        <p class="has-text-right">
-          <small class="author">Source or Author</small>
-        </p>
-      </div>
+      <div id="quote-box" class="quote box has-text-left"></div>
       <div class="show-quote">
-        <a id="quote-button" class="button is-info">Show Another Quote</a>
+        <a id="quote-button" class="button is-info">SHOW Another Quote</a>
       </div>
       <footer class="footer">
         <p class="title is-4">Share the Wisdom</p>
@@ -36,6 +32,7 @@
     </div>
   </div>
 </section>
+<script src="node_modules/axios/dist/axios.min.js"></script>
 <script src="./js/main.js"></script>
 </body>
 </html>
