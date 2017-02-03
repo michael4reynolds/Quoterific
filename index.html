@@ -1,38 +1,38 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Random Quote Machine</title>
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
   <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
   <link rel="stylesheet" href="./css/style.css">
-  <script
-          src="https://code.jquery.com/jquery-3.1.1.min.js"
-          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-          crossorigin="anonymous"></script>
 </head>
+
 <body>
-<section class="section">
-  <div class="container">
-    <div class="app column is-6 has-text-centered">
-      <div class="heading">
-        <h1 class="title is-2">Quoterific</h1>
+  <section class="section">
+    <div class="container">
+      <div class="app column is-6 has-text-centered">
+        <div class="heading">
+          <h1 class="title is-2">Quoterific</h1>
+        </div>
+        <div id="quote-box" class="quote box has-text-left"></div>
+        <div class="show-quote">
+          <a id="quote-button" class="button is-info">SHOW Another Quote</a>
+        </div>
+        <footer class="footer">
+          <p class="title is-4">Share the Wisdom</p>
+          <a id="twitter-share" target="_blank">
+            <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+          </a>
+        </footer>
       </div>
-      <div id="quote-box" class="quote box has-text-left"></div>
-      <div class="show-quote">
-        <a id="quote-button" class="button is-info">SHOW Another Quote</a>
-      </div>
-      <footer class="footer">
-        <p class="title is-4">Share the Wisdom</p>
-        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-      </footer>
     </div>
-  </div>
-</section>
-<script src="node_modules/axios/dist/axios.min.js"></script>
-<script src="./js/main.js"></script>
+  </section>
+  <script src="node_modules/axios/dist/axios.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
+
 </html>

@@ -1,39 +1,42 @@
-html, .section {
-  background: #2E5C83;
+html,
+.section {
+    background: #2E5C83;
 }
 
 .app {
-  color: #0E5898;
-  background: #F6F6F6;
-  margin-left: auto;
-  margin-right: auto;
-  .title {
-    text-transform: none;
-    color: #297FCA;
-    margin-bottom: 20px;
-  }
+    color: #0E5898;
+    background: #F6F6F6;
+    margin-left: auto;
+    margin-right: auto;
+    .title {
+        text-transform: none;
+        color: #297FCA;
+        margin-bottom: 20px;
+    }
 }
 
 .quote.box {
-  min-height: 175px;
-  p {
-    font-size: larger;
-  }
+    min-height: 175px;
+    p {
+        font-size: larger;
+    }
 }
 
 .show-quote {
-  margin-bottom: 20px;
-  a {
-    padding: 25px 15px;
-  }
+    margin-bottom: 20px;
+    a {
+        padding: 25px 15px;
+    }
 }
 
 .footer {
-  background: #212121;
-  height: 150px;
-  .fa-2x {
-    font-size: 2em;
-  }
+    background: #212121;
+    height: 150px;
+    .fa-2x {
+        font-size: 2em;
+    }
 }
 
-
+#twitter-share {
+    color: #3273dc;
+}
